@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d66e270f68439863228ef28199e74f8c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d66e270f68439863228ef28199e74f8c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d66e270f68439863228ef28199e74f8c = L.map(
+                "map_d66e270f68439863228ef28199e74f8c",
+                {
+                    center: [4.60971, -74.08175],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_145566c41e5ee2bbb7d65f7202be2ac7 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d66e270f68439863228ef28199e74f8c);
+        
+    
+            var feature_group_34189aaefbff20754dd7b79cccb11bc3 = L.featureGroup(
+                {}
+            ).addTo(map_d66e270f68439863228ef28199e74f8c);
+        
+    
+            var marker_4312a912d9037a3e55698d8dc7b71472 = L.marker(
+                [4.667104699999999, -74.05174559999999],
+                {}
+            ).addTo(feature_group_34189aaefbff20754dd7b79cccb11bc3);
+        
+    
+            var icon_417240463abc308fa9e034eb33be5ef0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4312a912d9037a3e55698d8dc7b71472.setIcon(icon_417240463abc308fa9e034eb33be5ef0);
+        
+    
+        var popup_41576cad1e79756569503e376d433144 = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_04442b3f10cf8d20857a4f7d7b87a520 = $(`<div id="html_04442b3f10cf8d20857a4f7d7b87a520" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> <br><b>Telefono:</b> 6213111</div>`)[0];
+                popup_41576cad1e79756569503e376d433144.setContent(html_04442b3f10cf8d20857a4f7d7b87a520);
+            
+        
+
+        marker_4312a912d9037a3e55698d8dc7b71472.bindPopup(popup_41576cad1e79756569503e376d433144)
+        ;
+
+        
+    
+    
+            marker_4312a912d9037a3e55698d8dc7b71472.bindTooltip(
+                `<div>
+                     Andino
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76b4cc688ce29c1863c0376b6dde6261 = L.marker(
+                [4.6923278, -74.0321352],
+                {}
+            ).addTo(feature_group_34189aaefbff20754dd7b79cccb11bc3);
+        
+    
+            var icon_6652b5448750fe2fe113d7810ca779e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_76b4cc688ce29c1863c0376b6dde6261.setIcon(icon_6652b5448750fe2fe113d7810ca779e8);
+        
+    
+        var popup_c86c669fbe41764d18a79122f44c2ec1 = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_8378ba5d184c4ad12f66a46caca44d0e = $(`<div id="html_8378ba5d184c4ad12f66a46caca44d0e" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> <br><b>Telefono:</b> 6120388</div>`)[0];
+                popup_c86c669fbe41764d18a79122f44c2ec1.setContent(html_8378ba5d184c4ad12f66a46caca44d0e);
+            
+        
+
+        marker_76b4cc688ce29c1863c0376b6dde6261.bindPopup(popup_c86c669fbe41764d18a79122f44c2ec1)
+        ;
+
+        
+    
+    
+            marker_76b4cc688ce29c1863c0376b6dde6261.bindTooltip(
+                `<div>
+                     Santa Barbara
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ac61066706275aa78b8eb2420575311 = L.marker(
+                [4.7617897, -74.0463444],
+                {}
+            ).addTo(feature_group_34189aaefbff20754dd7b79cccb11bc3);
+        
+    
+            var icon_8bc2e1f57816fa3c620b69139fcfd2f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4ac61066706275aa78b8eb2420575311.setIcon(icon_8bc2e1f57816fa3c620b69139fcfd2f3);
+        
+    
+        var popup_bb1ca170396f8ae05833a7c0abf883a1 = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_5677f2c46c78fa8c809d22c260eead4f = $(`<div id="html_5677f2c46c78fa8c809d22c260eead4f" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Domingo a viernes de 11:00 a.m. a 8:00 p.m. Sábados de 11:00 a.m. a 9:00 p.m.<br><b>Telefono:</b> 6712464</div>`)[0];
+                popup_bb1ca170396f8ae05833a7c0abf883a1.setContent(html_5677f2c46c78fa8c809d22c260eead4f);
+            
+        
+
+        marker_4ac61066706275aa78b8eb2420575311.bindPopup(popup_bb1ca170396f8ae05833a7c0abf883a1)
+        ;
+
+        
+    
+    
+            marker_4ac61066706275aa78b8eb2420575311.bindTooltip(
+                `<div>
+                     Santa Fe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ad56d3b577bc729345d1d47bc925f75 = L.marker(
+                [4.6667724, -74.0559561],
+                {}
+            ).addTo(feature_group_34189aaefbff20754dd7b79cccb11bc3);
+        
+    
+            var icon_17cd0bacbfed8dc570844716085a463c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4ad56d3b577bc729345d1d47bc925f75.setIcon(icon_17cd0bacbfed8dc570844716085a463c);
+        
+    
+        var popup_ae469d2b622d39fac293af807b39376c = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_a16ff626beb0bf9025f83b7b9bc92cb1 = $(`<div id="html_a16ff626beb0bf9025f83b7b9bc92cb1" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Lunes a sábado de 10:30 a.m. a 9:00 p.m. Domingos y festivos de: 9:00 a.m. a 9:00 p.m.<br><b>Telefono:</b> 6066200</div>`)[0];
+                popup_ae469d2b622d39fac293af807b39376c.setContent(html_a16ff626beb0bf9025f83b7b9bc92cb1);
+            
+        
+
+        marker_4ad56d3b577bc729345d1d47bc925f75.bindPopup(popup_ae469d2b622d39fac293af807b39376c)
+        ;
+
+        
+    
+    
+            marker_4ad56d3b577bc729345d1d47bc925f75.bindTooltip(
+                `<div>
+                     Atlantis
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e01f836dbe92d2da44a1f6e9a23c58f = L.marker(
+                [4.6652859, -74.05819389999999],
+                {}
+            ).addTo(feature_group_34189aaefbff20754dd7b79cccb11bc3);
+        
+    
+            var icon_30d75029421348864ba3ddc170516dbf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1e01f836dbe92d2da44a1f6e9a23c58f.setIcon(icon_30d75029421348864ba3ddc170516dbf);
+        
+    
+        var popup_661c934670d582afa33a79c370ce90de = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_780242bae2c4bd737e9e146f66622469 = $(`<div id="html_780242bae2c4bd737e9e146f66622469" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Lunes a sábado de 8:30 a.m. a 9:00 p.m.<br><b>Telefono:</b> 6106460</div>`)[0];
+                popup_661c934670d582afa33a79c370ce90de.setContent(html_780242bae2c4bd737e9e146f66622469);
+            
+        
+
+        marker_1e01f836dbe92d2da44a1f6e9a23c58f.bindPopup(popup_661c934670d582afa33a79c370ce90de)
+        ;
+
+        
+    
+    
+            marker_1e01f836dbe92d2da44a1f6e9a23c58f.bindTooltip(
+                `<div>
+                     Unilago
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c887ae13c458b944c63e338f9612910 = L.marker(
+                [4.676745299999999, -74.0519541],
+                {}
+            ).addTo(feature_group_34189aaefbff20754dd7b79cccb11bc3);
+        
+    
+            var icon_190f0165ea462d5712036a4d1e47e9e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8c887ae13c458b944c63e338f9612910.setIcon(icon_190f0165ea462d5712036a4d1e47e9e8);
+        
+    
+        var popup_b2bb3a11332fd9addd274bffd91cf70f = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_ffc4c4027bb3571ee0777c294ce100be = $(`<div id="html_ffc4c4027bb3571ee0777c294ce100be" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Lunes a sábado de 9:00 a.m. a 8:00 p.m.<br><b>Telefono:</b> 2570103</div>`)[0];
+                popup_b2bb3a11332fd9addd274bffd91cf70f.setContent(html_ffc4c4027bb3571ee0777c294ce100be);
+            
+        
+
+        marker_8c887ae13c458b944c63e338f9612910.bindPopup(popup_b2bb3a11332fd9addd274bffd91cf70f)
+        ;
+
+        
+    
+    
+            marker_8c887ae13c458b944c63e338f9612910.bindTooltip(
+                `<div>
+                     Centro 93
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da6e329589f0f9073352f39e6f1eebb0 = L.marker(
+                [4.6889075, -74.0653313],
+                {}
+            ).addTo(feature_group_34189aaefbff20754dd7b79cccb11bc3);
+        
+    
+            var icon_7c966c3b6cdd7e5605bf722255f1fa4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_da6e329589f0f9073352f39e6f1eebb0.setIcon(icon_7c966c3b6cdd7e5605bf722255f1fa4a);
+        
+    
+        var popup_69c6887a7045b566827c14446f176faf = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_3b23d3817e53935eaa94362e54b24a8a = $(`<div id="html_3b23d3817e53935eaa94362e54b24a8a" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Domingo a Domingo de 9:00 a.m. a 9:00 p.m.<br><b>Telefono:</b> 5337240</div>`)[0];
+                popup_69c6887a7045b566827c14446f176faf.setContent(html_3b23d3817e53935eaa94362e54b24a8a);
+            
+        
+
+        marker_da6e329589f0f9073352f39e6f1eebb0.bindPopup(popup_69c6887a7045b566827c14446f176faf)
+        ;
+
+        
+    
+    
+            marker_da6e329589f0f9073352f39e6f1eebb0.bindTooltip(
+                `<div>
+                     Iserra 100
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de5758f7849de6f56ef1c3ba05a41a03 = L.marker(
+                [4.7022765, -74.04196929999999],
+                {}
+            ).addTo(feature_group_34189aaefbff20754dd7b79cccb11bc3);
+        
+    
+            var icon_3d01c64baacb5be42d885a95e7ae5eac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_de5758f7849de6f56ef1c3ba05a41a03.setIcon(icon_3d01c64baacb5be42d885a95e7ae5eac);
+        
+    
+        var popup_874868dbdba3b67ad714a2f4c9709bcc = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_f8a838af785aaf26239484d9fe76bb8c = $(`<div id="html_f8a838af785aaf26239484d9fe76bb8c" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Domingo a Domingo de 8:00 a.m. a 10:00 p.m.<br><b>Telefono:</b> 2138800</div>`)[0];
+                popup_874868dbdba3b67ad714a2f4c9709bcc.setContent(html_f8a838af785aaf26239484d9fe76bb8c);
+            
+        
+
+        marker_de5758f7849de6f56ef1c3ba05a41a03.bindPopup(popup_874868dbdba3b67ad714a2f4c9709bcc)
+        ;
+
+        
+    
+    
+            marker_de5758f7849de6f56ef1c3ba05a41a03.bindTooltip(
+                `<div>
+                     Unicentro 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3dab70a408d48e588dfc4f5b2e3f3ec1 = L.marker(
+                [4.7121946, -74.07161529999999],
+                {}
+            ).addTo(feature_group_34189aaefbff20754dd7b79cccb11bc3);
+        
+    
+            var icon_b0732f01801ac71126e46296e9a89527 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3dab70a408d48e588dfc4f5b2e3f3ec1.setIcon(icon_b0732f01801ac71126e46296e9a89527);
+        
+    
+        var popup_c9cabcf7680f02803bc8830f6c2d5600 = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_c672f7b6c547560e1746b437030083cd = $(`<div id="html_c672f7b6c547560e1746b437030083cd" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Domingo a Domingo de 9:00 a.m. a 9:00 p.m.<br><b>Telefono:</b> 2267211</div>`)[0];
+                popup_c9cabcf7680f02803bc8830f6c2d5600.setContent(html_c672f7b6c547560e1746b437030083cd);
+            
+        
+
+        marker_3dab70a408d48e588dfc4f5b2e3f3ec1.bindPopup(popup_c9cabcf7680f02803bc8830f6c2d5600)
+        ;
+
+        
+    
+    
+            marker_3dab70a408d48e588dfc4f5b2e3f3ec1.bindTooltip(
+                `<div>
+                     Bulevar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45d5bab6b24cfe7d823615ab0da74986 = L.marker(
+                [4.7082666, -74.0677135],
+                {}
+            ).addTo(feature_group_34189aaefbff20754dd7b79cccb11bc3);
+        
+    
+            var icon_303a96fe83200ac26666b996745eb287 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_45d5bab6b24cfe7d823615ab0da74986.setIcon(icon_303a96fe83200ac26666b996745eb287);
+        
+    
+        var popup_c4b421d9d23857f0f82086aadb32deef = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_da101749d49c43b0fb58f22bfb96a1af = $(`<div id="html_da101749d49c43b0fb58f22bfb96a1af" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Domingo a Domingo de 9:00 a.m. a 9:00 p.m.<br><b>Telefono:</b> 6246354</div>`)[0];
+                popup_c4b421d9d23857f0f82086aadb32deef.setContent(html_da101749d49c43b0fb58f22bfb96a1af);
+            
+        
+
+        marker_45d5bab6b24cfe7d823615ab0da74986.bindPopup(popup_c4b421d9d23857f0f82086aadb32deef)
+        ;
+
+        
+    
+    
+            marker_45d5bab6b24cfe7d823615ab0da74986.bindTooltip(
+                `<div>
+                     Portoalegre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_697048d8204d865e7449c22224eac047 = L.marker(
+                [4.732167, -74.0424999],
+                {}
+            ).addTo(feature_group_34189aaefbff20754dd7b79cccb11bc3);
+        
+    
+            var icon_f5da0327c9c13b0d50b882b084034463 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_697048d8204d865e7449c22224eac047.setIcon(icon_f5da0327c9c13b0d50b882b084034463);
+        
+    
+        var popup_a33304092b874db8d33f03f303adb987 = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_6b001a2b37248b5b9edc9b6425971153 = $(`<div id="html_6b001a2b37248b5b9edc9b6425971153" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Domingo a Domingo de 9:00 a.m. a 8:00 p.m.<br><b>Telefono:</b> 6142010</div>`)[0];
+                popup_a33304092b874db8d33f03f303adb987.setContent(html_6b001a2b37248b5b9edc9b6425971153);
+            
+        
+
+        marker_697048d8204d865e7449c22224eac047.bindPopup(popup_a33304092b874db8d33f03f303adb987)
+        ;
+
+        
+    
+    
+            marker_697048d8204d865e7449c22224eac047.bindTooltip(
+                `<div>
+                     Cedritos 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6cc5b69273a7d8d088be8044ff9b49c0 = L.marker(
+                [4.7161849, -74.0286632],
+                {}
+            ).addTo(feature_group_34189aaefbff20754dd7b79cccb11bc3);
+        
+    
+            var icon_c06dd847f21c3b09f380108ddd2592f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6cc5b69273a7d8d088be8044ff9b49c0.setIcon(icon_c06dd847f21c3b09f380108ddd2592f4);
+        
+    
+        var popup_82d10e612816c390e29a3c9374ed8930 = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_d3fe562672d448795adb73ecea26ec6d = $(`<div id="html_d3fe562672d448795adb73ecea26ec6d" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Domingo a Domingo de 9:00 a.m. a 9:00 p.m<br><b>Telefono:</b> 6143718</div>`)[0];
+                popup_82d10e612816c390e29a3c9374ed8930.setContent(html_d3fe562672d448795adb73ecea26ec6d);
+            
+        
+
+        marker_6cc5b69273a7d8d088be8044ff9b49c0.bindPopup(popup_82d10e612816c390e29a3c9374ed8930)
+        ;
+
+        
+    
+    
+            marker_6cc5b69273a7d8d088be8044ff9b49c0.bindTooltip(
+                `<div>
+                     Palatino
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b389d70b2c06be00f978db78927b2eb = L.marker(
+                [4.732956600000001, -74.0489848],
+                {}
+            ).addTo(feature_group_34189aaefbff20754dd7b79cccb11bc3);
+        
+    
+            var icon_577a9c1c96f28d891359247f2e78fb10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4b389d70b2c06be00f978db78927b2eb.setIcon(icon_577a9c1c96f28d891359247f2e78fb10);
+        
+    
+        var popup_108fe4df5ca42502b6e4ad87cd748fc4 = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_b9db5c375c6a7477ee352935504e266e = $(`<div id="html_b9db5c375c6a7477ee352935504e266e" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Domingo a Domingo de 8:00 a.m. a 9:00 p.m.<br><b>Telefono:</b> 2742387</div>`)[0];
+                popup_108fe4df5ca42502b6e4ad87cd748fc4.setContent(html_b9db5c375c6a7477ee352935504e266e);
+            
+        
+
+        marker_4b389d70b2c06be00f978db78927b2eb.bindPopup(popup_108fe4df5ca42502b6e4ad87cd748fc4)
+        ;
+
+        
+    
+    
+            marker_4b389d70b2c06be00f978db78927b2eb.bindTooltip(
+                `<div>
+                     Mazurén
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3915a9f0039b3febafd6ffb75594f4a = L.marker(
+                [4.6909401, -74.0368281],
+                {}
+            ).addTo(feature_group_34189aaefbff20754dd7b79cccb11bc3);
+        
+    
+            var icon_bed959c5f922d8328f20d3b825f1636a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b3915a9f0039b3febafd6ffb75594f4a.setIcon(icon_bed959c5f922d8328f20d3b825f1636a);
+        
+    
+        var popup_083e5eee337fd551eed603b9b2ad94d5 = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_1cb83c0ae79b8cbf8159ff73342f9ae5 = $(`<div id="html_1cb83c0ae79b8cbf8159ff73342f9ae5" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Lunes a Domingo de 10:00 am a 9:00 pm<br><b>Telefono:</b> 6378566</div>`)[0];
+                popup_083e5eee337fd551eed603b9b2ad94d5.setContent(html_1cb83c0ae79b8cbf8159ff73342f9ae5);
+            
+        
+
+        marker_b3915a9f0039b3febafd6ffb75594f4a.bindPopup(popup_083e5eee337fd551eed603b9b2ad94d5)
+        ;
+
+        
+    
+    
+            marker_b3915a9f0039b3febafd6ffb75594f4a.bindTooltip(
+                `<div>
+                     Santa Ana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_349cbe79511a12c9cdbdac4c1b7cbe92 = L.marker(
+                [4.6804792, -74.0823131],
+                {}
+            ).addTo(feature_group_34189aaefbff20754dd7b79cccb11bc3);
+        
+    
+            var icon_a0af63979c9f2c12573bfb6851664fce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_349cbe79511a12c9cdbdac4c1b7cbe92.setIcon(icon_a0af63979c9f2c12573bfb6851664fce);
+        
+    
+        var popup_6a10cc0c383e286416f3f6957ed3cd4c = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_6efb1cdab763b3356080848c4f4904c3 = $(`<div id="html_6efb1cdab763b3356080848c4f4904c3" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Domingo a Domingo de 10:00 a.m. a 10:00 p.m.<br><b>Telefono:</b> 6602944</div>`)[0];
+                popup_6a10cc0c383e286416f3f6957ed3cd4c.setContent(html_6efb1cdab763b3356080848c4f4904c3);
+            
+        
+
+        marker_349cbe79511a12c9cdbdac4c1b7cbe92.bindPopup(popup_6a10cc0c383e286416f3f6957ed3cd4c)
+        ;
+
+        
+    
+    
+            marker_349cbe79511a12c9cdbdac4c1b7cbe92.bindTooltip(
+                `<div>
+                     Metrópolis 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_14b415ff53ee1aea763aefc68aafcd86 = L.featureGroup(
+                {}
+            ).addTo(map_d66e270f68439863228ef28199e74f8c);
+        
+    
+            var marker_8faeb07b8969e2f871d74a029f93b792 = L.marker(
+                [4.653143399999999, -74.1093285],
+                {}
+            ).addTo(feature_group_14b415ff53ee1aea763aefc68aafcd86);
+        
+    
+            var icon_f875f4a6ada373e530c69db4bfbe0c96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8faeb07b8969e2f871d74a029f93b792.setIcon(icon_f875f4a6ada373e530c69db4bfbe0c96);
+        
+    
+        var popup_ef36b59a640748ab99f2d1fe46b656c9 = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_3605d1a3d3dd7fe635bf0347bb59f731 = $(`<div id="html_3605d1a3d3dd7fe635bf0347bb59f731" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Domingo a Domingo de 9:00 a.m. a 10:00 p.m.<br><b>Telefono:</b> 4231010</div>`)[0];
+                popup_ef36b59a640748ab99f2d1fe46b656c9.setContent(html_3605d1a3d3dd7fe635bf0347bb59f731);
+            
+        
+
+        marker_8faeb07b8969e2f871d74a029f93b792.bindPopup(popup_ef36b59a640748ab99f2d1fe46b656c9)
+        ;
+
+        
+    
+    
+            marker_8faeb07b8969e2f871d74a029f93b792.bindTooltip(
+                `<div>
+                     Salitre Plaza
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d51d007d64f7e926d4e8a8747e9f411 = L.marker(
+                [4.709607999999999, -74.1112871],
+                {}
+            ).addTo(feature_group_14b415ff53ee1aea763aefc68aafcd86);
+        
+    
+            var icon_953ad6b3de1f245e7f1c7978c1c00b15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9d51d007d64f7e926d4e8a8747e9f411.setIcon(icon_953ad6b3de1f245e7f1c7978c1c00b15);
+        
+    
+        var popup_b0998817d3c0f9c8bc41c85bd8e91e40 = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_a52ccd606c4f559b8781515c6d7cd705 = $(`<div id="html_a52ccd606c4f559b8781515c6d7cd705" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Domingo a Domingo de 9:00 a.m. a 10:00 p.m.<br><b>Telefono:</b> 4339944</div>`)[0];
+                popup_b0998817d3c0f9c8bc41c85bd8e91e40.setContent(html_a52ccd606c4f559b8781515c6d7cd705);
+            
+        
+
+        marker_9d51d007d64f7e926d4e8a8747e9f411.bindPopup(popup_b0998817d3c0f9c8bc41c85bd8e91e40)
+        ;
+
+        
+    
+    
+            marker_9d51d007d64f7e926d4e8a8747e9f411.bindTooltip(
+                `<div>
+                     Portal de la 80
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_fb28d0f34d6e9502098a5b9567f2e578 = L.featureGroup(
+                {}
+            ).addTo(map_d66e270f68439863228ef28199e74f8c);
+        
+    
+            var marker_1201df961fe908f02c16cede079fdf20 = L.marker(
+                [4.6406892, -74.1351865],
+                {}
+            ).addTo(feature_group_fb28d0f34d6e9502098a5b9567f2e578);
+        
+    
+            var icon_a7ef9670c351a5e8717e8d5bebe62456 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1201df961fe908f02c16cede079fdf20.setIcon(icon_a7ef9670c351a5e8717e8d5bebe62456);
+        
+    
+        var popup_a9b36fbc8b5ab02a1425cc50c5726577 = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_cc4612ab02f0ebbda67e87d99a9ded56 = $(`<div id="html_cc4612ab02f0ebbda67e87d99a9ded56" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Lunes a sábado de 8:30 a.m. a 9:00 p.m. Domingos y festivos de: 9:00 a.m. a 9:00 p.m.<br><b>Telefono:</b> 3120770</div>`)[0];
+                popup_a9b36fbc8b5ab02a1425cc50c5726577.setContent(html_cc4612ab02f0ebbda67e87d99a9ded56);
+            
+        
+
+        marker_1201df961fe908f02c16cede079fdf20.bindPopup(popup_a9b36fbc8b5ab02a1425cc50c5726577)
+        ;
+
+        
+    
+    
+            marker_1201df961fe908f02c16cede079fdf20.bindTooltip(
+                `<div>
+                     Avenida Chile
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aee540803066c3ef52cb058f0c6b877b = L.marker(
+                [4.647653399999999, -74.101721],
+                {}
+            ).addTo(feature_group_fb28d0f34d6e9502098a5b9567f2e578);
+        
+    
+            var icon_2685965e4af3166a68885431f9da7421 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_aee540803066c3ef52cb058f0c6b877b.setIcon(icon_2685965e4af3166a68885431f9da7421);
+        
+    
+        var popup_a4f5bcfab03fff23e664d201406c90c0 = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_e365c025c9f519e33af20664cbfb0e55 = $(`<div id="html_e365c025c9f519e33af20664cbfb0e55" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Lunes a sábado de 8:30 a.m. a 9:00 p.m. Domingos y festivos de: 9:00 a.m. a 9:00 p.m.<br><b>Telefono:</b> 5790906</div>`)[0];
+                popup_a4f5bcfab03fff23e664d201406c90c0.setContent(html_e365c025c9f519e33af20664cbfb0e55);
+            
+        
+
+        marker_aee540803066c3ef52cb058f0c6b877b.bindPopup(popup_a4f5bcfab03fff23e664d201406c90c0)
+        ;
+
+        
+    
+    
+            marker_aee540803066c3ef52cb058f0c6b877b.bindTooltip(
+                `<div>
+                     Gran Estación
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_50af6a557f7b22b70a1e9288f1df1edb = L.marker(
+                [4.646049, -74.099564],
+                {}
+            ).addTo(feature_group_fb28d0f34d6e9502098a5b9567f2e578);
+        
+    
+            var icon_ce5737b6edb3ce237a01269b9f06d779 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_50af6a557f7b22b70a1e9288f1df1edb.setIcon(icon_ce5737b6edb3ce237a01269b9f06d779);
+        
+    
+        var popup_2118638c4129594c16860f5156661383 = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_03071bd339e4c84b985efacbfa5d1b8f = $(`<div id="html_03071bd339e4c84b985efacbfa5d1b8f" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Domingo a Domingo de 9:00 a.m. a 10:00 p.m.<br><b>Telefono:</b> 3470419</div>`)[0];
+                popup_2118638c4129594c16860f5156661383.setContent(html_03071bd339e4c84b985efacbfa5d1b8f);
+            
+        
+
+        marker_50af6a557f7b22b70a1e9288f1df1edb.bindPopup(popup_2118638c4129594c16860f5156661383)
+        ;
+
+        
+    
+    
+            marker_50af6a557f7b22b70a1e9288f1df1edb.bindTooltip(
+                `<div>
+                     Galerías
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8bbb01e79660603948ca81fbbd6182b0 = L.marker(
+                [4.6243611, -74.1366879],
+                {}
+            ).addTo(feature_group_fb28d0f34d6e9502098a5b9567f2e578);
+        
+    
+            var icon_0016f5b661e2f779db7df9bc86615fe3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8bbb01e79660603948ca81fbbd6182b0.setIcon(icon_0016f5b661e2f779db7df9bc86615fe3);
+        
+    
+        var popup_ef7cfda6288c1643bc0a16e7e7b4386d = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_2b3bae3a71927e6d7776eacfb7ea4411 = $(`<div id="html_2b3bae3a71927e6d7776eacfb7ea4411" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Domingo a Domingo de 9:00 a.m. a 10:00 p.m.<br><b>Telefono:</b> 4467575</div>`)[0];
+                popup_ef7cfda6288c1643bc0a16e7e7b4386d.setContent(html_2b3bae3a71927e6d7776eacfb7ea4411);
+            
+        
+
+        marker_8bbb01e79660603948ca81fbbd6182b0.bindPopup(popup_ef7cfda6288c1643bc0a16e7e7b4386d)
+        ;
+
+        
+    
+    
+            marker_8bbb01e79660603948ca81fbbd6182b0.bindTooltip(
+                `<div>
+                     Plaza de las Americas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a11edee8a6583d7369d7add3a68379f = L.marker(
+                [4.5779008, -74.1302354],
+                {}
+            ).addTo(feature_group_fb28d0f34d6e9502098a5b9567f2e578);
+        
+    
+            var icon_cea6e5d31caf86737fea238a25897676 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2a11edee8a6583d7369d7add3a68379f.setIcon(icon_cea6e5d31caf86737fea238a25897676);
+        
+    
+        var popup_793f302b14339ee82849996b6c3978d8 = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_a9ecf5c857ff3fd289502b3c1a4dc791 = $(`<div id="html_a9ecf5c857ff3fd289502b3c1a4dc791" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Domingo a Domingo de 10:00 a.m. a 8:00 p.m.<br><b>Telefono:</b> 2057104</div>`)[0];
+                popup_793f302b14339ee82849996b6c3978d8.setContent(html_a9ecf5c857ff3fd289502b3c1a4dc791);
+            
+        
+
+        marker_2a11edee8a6583d7369d7add3a68379f.bindPopup(popup_793f302b14339ee82849996b6c3978d8)
+        ;
+
+        
+    
+    
+            marker_2a11edee8a6583d7369d7add3a68379f.bindTooltip(
+                `<div>
+                     Ciudad Tunal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0b9da027352a546496193fd7dee1edf = L.marker(
+                [4.6329351, -74.20093109999999],
+                {}
+            ).addTo(feature_group_fb28d0f34d6e9502098a5b9567f2e578);
+        
+    
+            var icon_462586278a29f7d57611f8b82c6f2669 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b0b9da027352a546496193fd7dee1edf.setIcon(icon_462586278a29f7d57611f8b82c6f2669);
+        
+    
+        var popup_ee05b8e3434ba009e90b29fa3b7aede6 = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_9891e516d7d958934ba83550ccc14b27 = $(`<div id="html_9891e516d7d958934ba83550ccc14b27" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Lunes a Domingo de 10:00 a.m. a 8:00 p.m.<br><b>Telefono:</b> </div>`)[0];
+                popup_ee05b8e3434ba009e90b29fa3b7aede6.setContent(html_9891e516d7d958934ba83550ccc14b27);
+            
+        
+
+        marker_b0b9da027352a546496193fd7dee1edf.bindPopup(popup_ee05b8e3434ba009e90b29fa3b7aede6)
+        ;
+
+        
+    
+    
+            marker_b0b9da027352a546496193fd7dee1edf.bindTooltip(
+                `<div>
+                     Metro Recreo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_274d55176a64b42a5afb697fc37da5af = L.marker(
+                [4.5935622, -74.12429399999999],
+                {}
+            ).addTo(feature_group_fb28d0f34d6e9502098a5b9567f2e578);
+        
+    
+            var icon_32ab7f1f760015eabee69b3f1583a9e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_274d55176a64b42a5afb697fc37da5af.setIcon(icon_32ab7f1f760015eabee69b3f1583a9e9);
+        
+    
+        var popup_cfa71d700d2857db7cb241d137b2cb17 = L.popup({"maxHeight": 100, "maxWidth": 450});
+
+        
+            
+                var html_09fe0f7252494232e51d24e873e67eea = $(`<div id="html_09fe0f7252494232e51d24e873e67eea" style="width: 100.0%; height: 100.0%;"><b>Horario:</b> Domingo a Domingo de 9:00 a.m. a 9:00 p.m.<br><b>Telefono:</b> 7342971</div>`)[0];
+                popup_cfa71d700d2857db7cb241d137b2cb17.setContent(html_09fe0f7252494232e51d24e873e67eea);
+            
+        
+
+        marker_274d55176a64b42a5afb697fc37da5af.bindPopup(popup_cfa71d700d2857db7cb241d137b2cb17)
+        ;
+
+        
+    
+    
+            marker_274d55176a64b42a5afb697fc37da5af.bindTooltip(
+                `<div>
+                     Centro Mayor
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_98936064a3ab45a56699d2847d44c5eb = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_145566c41e5ee2bbb7d65f7202be2ac7,
+                },
+                overlays :  {
+                    "Nororiente" : feature_group_34189aaefbff20754dd7b79cccb11bc3,
+                    "Noroccidente" : feature_group_14b415ff53ee1aea763aefc68aafcd86,
+                    "Suroccidente" : feature_group_fb28d0f34d6e9502098a5b9567f2e578,
+                },
+            };
+            L.control.layers(
+                layer_control_98936064a3ab45a56699d2847d44c5eb.base_layers,
+                layer_control_98936064a3ab45a56699d2847d44c5eb.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_d66e270f68439863228ef28199e74f8c);
+        
+</script>
+</html>
