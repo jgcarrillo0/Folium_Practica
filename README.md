@@ -33,5 +33,5 @@ Para una correcta ejecución de la práctica debe instalar en su entorno las sig
 - folium
 
 ## 🏆 Visualice la práctica
-Visualice el cuaderno en nbviewer aquí:
-[Práctica: Uso de Folium](https://nbviewer.org/github/jgcarrillo0/Folium_Practica/blob/main/Cuaderno/Mapas.ipynb)
+> [!TIP]
+> Visualice el cuaderno en nbviewer aquí: [Práctica: Uso de Folium](https://nbviewer.org/github/jgcarrillo0/Folium_Practica/blob/main/Cuaderno/Mapas.ipynb)
